@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>La Carlota | Casa en Tafí del Valle</title>
+    <meta
+      name="description"
+      content="La Carlota, casa de fin de semana en Tafí del Valle para 10 personas. Alquiler por día, ubicación en La Ovejería y reservas por WhatsApp."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="La Carlota">
+    <meta property="og:title" content="La Carlota | Casa en Tafí del Valle">
+    <meta property="og:description" content="Casa para 10 personas en La Ovejería, rodeada de verde, con Starlink, proyector, salamandra y asador.">
+    <meta property="og:url" content="https://casatafi-alquilo.netlify.app/">
+    <meta property="og:image" content="https://casatafi-alquilo.netlify.app/assets/portada-la-carlota.jpeg">
+    <meta property="og:image:alt" content="La Carlota, casa rodeada de verde y cerros en Tafí del Valle">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="La Carlota | Casa en Tafí del Valle">
+    <meta name="twitter:description" content="Casa para 10 personas en La Ovejería, con Starlink, proyector, salamandra y asador.">
+    <meta name="twitter:image" content="https://casatafi-alquilo.netlify.app/assets/portada-la-carlota.jpeg">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Inicio La Carlota">
+        <span class="brand-mark">LC</span>
+        <span>La Carlota</span>
+      </a>
+      <nav aria-label="Secciones">
+        <a href="#galeria">Fotos</a>
+        <a href="#calendario">Disponibilidad</a>
+        <a href="#ubicacion">Ubicación</a>
+      </nav>
+      <div class="topbar-actions">
+        <button id="adminQuick" class="admin-link" type="button">Admin</button>
+        <a class="whatsapp-link" href="https://wa.me/5493816388243?text=Hola%2C%20quiero%20consultar%20por%20La%20Carlota%20en%20Tafi%20del%20Valle" target="_blank" rel="noreferrer">
+          WhatsApp
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-media" aria-label="La Carlota rodeada de verde y cerros en Tafí del Valle">
+          <img id="heroCover" alt="La Carlota rodeada de verde y cerros en Tafí del Valle">
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Casa en Tafí del Valle</p>
+          <h1>La Carlota</h1>
+          <p class="hero-text">
+            Casa para 10 personas en La Ovejería, rodeada de verde y con una vista hermosa para descansar, compartir y vivir Tafí con comodidad.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="https://wa.me/5493816388243?text=Hola%2C%20quiero%20hacer%20una%20reserva%20en%20La%20Carlota" target="_blank" rel="noreferrer">
+              Hacé tu reserva
+            </a>
+            <a class="secondary-button" href="#calendario">Ver días libres</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking-strip" aria-label="Datos principales">
+        <div>
+          <span>Capacidad</span>
+          <strong>10 personas</strong>
+        </div>
+        <div>
+          <span>Precio</span>
+          <strong>$150.000 por día</strong>
+        </div>
+        <div>
+          <span>Estadía mínima</span>
+          <strong>2 días</strong>
+        </div>
+        <div>
+          <span>Fines de semana largos</span>
+          <strong>Consultar mínimo</strong>
+        </div>
+      </section>
+
+      <section class="section two-column">
+        <div>
+          <p class="eyebrow">Descanso y comodidad</p>
+          <h2>Una casa amplia, cálida y lista para compartir</h2>
+          <p>
+            La Carlota tiene 2 habitaciones, una de ellas en suite, cocina, living y comedor amplio con concepto abierto. Es cómoda, luminosa y pensada para disfrutar unos días de descanso en familia o con amigos, con conexión Starlink, salamandra, proyector y noches de película en la montaña.
+          </p>
+        </div>
+        <div class="features">
+          <article>
+            <span>01</span>
+            <h3>Internet Starlink</h3>
+            <p>WiFi rápido y estable para trabajar, ver contenido, hacer videollamadas o compartir la estadía.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Tu cine en Tafí</h3>
+            <p>Proyector para películas, partidos o series con la comodidad de una casa de montaña.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Afuera</h3>
+            <p>Asador con solarium de piedra y vista abierta al verde.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Ubicación</h3>
+            <p>En La Ovejería, Tafí del Valle, con entorno tranquilo y natural.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="galeria" class="section gallery-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Fotos</p>
+            <h2>Fotos de La Carlota</h2>
+          </div>
+        </div>
+        <div id="photoPortal" class="photo-portal" hidden>
+          <div>
+            <h3>Portal para cargar fotos</h3>
+            <p>Solo administrador: subí fotos del interior, habitaciones, asador, solarium y vistas. Se agregan al carrusel y quedan guardadas en este navegador.</p>
+          </div>
+          <label class="upload-button">
+            Cargar muchas fotos
+            <input id="photoInput" type="file" accept="image/*" multiple>
+          </label>
+        </div>
+        <div id="adminStorageTools" class="storage-tools" hidden>
+          <button id="exportData" class="secondary-button" type="button">Respaldar datos</button>
+          <label class="upload-button">
+            Importar respaldo
+            <input id="importData" type="file" accept="application/json">
+          </label>
+        </div>
+        <div class="carousel" aria-live="polite">
+          <button id="prevPhoto" class="carousel-arrow" type="button" aria-label="Foto anterior">&lsaquo;</button>
+          <div id="photoFrame" class="photo-frame"></div>
+          <button id="nextPhoto" class="carousel-arrow" type="button" aria-label="Foto siguiente">&rsaquo;</button>
+        </div>
+        <div class="carousel-footer">
+          <span id="photoCounter"></span>
+          <button id="deletePhoto" class="danger-button" type="button" hidden>Eliminar foto actual</button>
+          <button id="deleteAllPhotos" class="danger-button" type="button" hidden>Eliminar todas las fotos</button>
+        </div>
+        <div id="thumbs" class="thumbs" aria-label="Miniaturas de fotos"></div>
+      </section>
+
+      <section id="calendario" class="section calendar-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Disponibilidad</p>
+            <h2>Calendario de días libres</h2>
+          </div>
+          <button id="adminToggle" class="secondary-button" type="button">Modo administrador</button>
+        </div>
+
+        <div class="calendar-tools">
+          <button id="prevMonth" type="button" aria-label="Mes anterior">&lsaquo;</button>
+          <strong id="monthLabel"></strong>
+          <button id="nextMonth" type="button" aria-label="Mes siguiente">&rsaquo;</button>
+        </div>
+
+        <div class="calendar-legend">
+          <span><i class="free"></i> Libre</span>
+          <span><i class="busy"></i> Ocupado</span>
+        </div>
+
+        <form id="guestBookingForm" class="guest-booking">
+          <div class="guest-booking-copy">
+            <h3>Elegí tus fechas</h3>
+            <p>La web calcula el total automáticamente. Si las fechas están disponibles, podés concluir la reserva por WhatsApp.</p>
+          </div>
+          <label>
+            Entrada
+            <input id="guestCheckIn" type="date" required>
+          </label>
+          <label>
+            Salida
+            <input id="guestCheckOut" type="date" required>
+          </label>
+          <div id="bookingTotal" class="booking-total">Selecciona entrada y salida.</div>
+          <a id="reserveWhatsapp" class="primary-button disabled-link" href="#" aria-disabled="true">Concluir reserva por WhatsApp</a>
+        </form>
+
+        <div id="adminPanel" class="admin-panel" hidden>
+          <div class="admin-copy">
+            <h3>Portal de reservas</h3>
+            <p>Cargá una reserva confirmada y la web bloquea automáticamente esos días para que dejen de aparecer disponibles.</p>
+          </div>
+          <form id="reservationForm" class="reservation-form">
+            <label>
+              Nombre
+              <input id="guestName" type="text" placeholder="Opcional">
+            </label>
+            <label>
+              Entrada
+              <input id="checkIn" type="date" required>
+            </label>
+            <label>
+              Salida
+              <input id="checkOut" type="date" required>
+            </label>
+            <button class="primary-button" type="submit">Reserva realizada exitosamente</button>
+          </form>
+          <div class="admin-actions">
+            <button id="clearBusy" class="danger-button" type="button">Limpiar días ocupados</button>
+          </div>
+        </div>
+
+        <div id="reservationList" class="reservation-list" hidden></div>
+
+        <div class="calendar-grid day-names" aria-hidden="true">
+          <span>Dom</span>
+          <span>Lun</span>
+          <span>Mar</span>
+          <span>Mie</span>
+          <span>Jue</span>
+          <span>Vie</span>
+          <span>Sab</span>
+        </div>
+        <div id="calendar" class="calendar-grid"></div>
+      </section>
+
+      <section id="ubicacion" class="section location-section">
+        <div class="location-copy">
+          <p class="eyebrow">Cómo llegar</p>
+          <h2>La Ovejería, Tafí del Valle</h2>
+          <p>
+            La casa queda en una zona rodeada de verde, ideal para descansar y disfrutar la vista. Abrila en Maps para ver el recorrido exacto.
+          </p>
+          <a class="primary-button" href="https://www.google.com/maps/place/26%C2%B051'46.3%22S+65%C2%B045'10.2%22W/@-26.8628712,-65.7554054,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-26.8628712!4d-65.7528305?hl=es&entry=ttu" target="_blank" rel="noreferrer">
+            Abrir ubicación
+          </a>
+        </div>
+        <iframe
+          title="Ubicación de La Carlota en Google Maps"
+          src="https://www.google.com/maps?q=-26.8628712,-65.7528305&hl=es&z=16&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </section>
+
+      <section id="resenas" class="section reviews-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Reseñas</p>
+            <h2>Opiniones de quienes ya se alojaron</h2>
+          </div>
+        </div>
+
+        <form id="reviewForm" class="review-form">
+          <div class="review-form-copy">
+            <h3>Dejá tu reseña</h3>
+            <p>Si ya te alojaste, ingresá tu código, tu correo, puntaje y comentario. Cada código funciona una sola vez.</p>
+          </div>
+          <label>
+            Código
+            <input id="reviewCode" type="text" required>
+          </label>
+          <label>
+            Correo
+            <input id="reviewEmail" type="email" required>
+          </label>
+          <label>
+            Estrellas
+            <select id="reviewStars" required>
+              <option value="">Elegir</option>
+              <option value="5">5 estrellas</option>
+              <option value="4">4 estrellas</option>
+              <option value="3">3 estrellas</option>
+              <option value="2">2 estrellas</option>
+              <option value="1">1 estrella</option>
+            </select>
+          </label>
+          <label class="review-message">
+            Reseña
+            <textarea id="reviewMessage" rows="4" required></textarea>
+          </label>
+          <button class="primary-button" type="submit">Enviar reseña</button>
+        </form>
+
+        <div id="reviewAdminPanel" class="review-admin-panel" hidden>
+          <div class="review-admin-copy">
+            <h3>Códigos y aprobación</h3>
+            <p>Generá códigos de un solo uso y elegí si una reseña queda pública o sigue oculta.</p>
+          </div>
+          <form id="reviewCodeForm" class="review-code-form">
+            <label>
+              Nombre o referencia
+              <input id="reviewCodeLabel" type="text" placeholder="Ejemplo: Reserva Diaz">
+            </label>
+            <button class="secondary-button" type="submit">Generar código</button>
+          </form>
+        </div>
+
+        <div id="reviewCodesList" class="review-codes-list" hidden></div>
+        <div id="reviewModerationList" class="review-moderation-list" hidden></div>
+        <div id="publicReviews" class="public-reviews"></div>
+      </section>
+    </main>
+
+    <a class="floating-whatsapp" href="https://wa.me/5493816388243?text=Hola%2C%20quiero%20consultar%20por%20La%20Carlota%20en%20Tafi%20del%20Valle" target="_blank" rel="noreferrer">
+      Consultar por WhatsApp
+    </a>
+
+    <footer>
+      <strong>La Carlota</strong>
+      <span>Casa en Tafí del Valle para alquiler temporario.</span>
+      <small id="siteVersion">Versión 2026-05-03.6</small>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
